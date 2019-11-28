@@ -1,0 +1,9 @@
+Authorization Request 
+http://localhost:9090/oauth/authorize?client_id=clientapp&redirect_uri=http://localhost:9000/callback&response_type=token&scope=read_profile 
+
+Resource Endpoint Request 
+
+curl -X GET http://localhost:9090/api/profile -H "Authorization: Bearer 2bd425f8-9218-43bfbd26-3fb970a5cd63"
+
+
+Resource Endpoint Response {"name":"adolfo","email":"adolfo@mailinator.com"}

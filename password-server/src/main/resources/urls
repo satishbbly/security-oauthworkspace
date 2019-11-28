@@ -1,0 +1,11 @@
+Authorization Request 
+curl -X POST http://localhost:9090/oauth/token --user clientapp:123456 -H "Accept: application/json" -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=password&username=adolfo&password=123&scope=read_profile"
+
+Resource Endpoint Request 
+
+curl -X GET http://localhost:9090/api/profile -H "Authorization: Bearer 2bd425f8-9218-43bfbd26-3fb970a5cd63"
+
+
+Resource Endpoint Response 
+
+{"name":"adolfo","email":"adolfo@mailinator.com"}
